@@ -1,2 +1,7 @@
 {
+"TEST-1": {
+    "type": "Internal",
+	"assertionPattern": ".*number of elements is a value equal.*",
+	"storyPattern":"Task_4_a.*"
+    }
 }

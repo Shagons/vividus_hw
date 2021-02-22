@@ -1,0 +1,11 @@
+Composite: When I create new users
+When I enter `#{generate(Internet.safeEmailAddress)}` in field located `By.xpath(//form[@class='row my-5']//input[@type='email'])`
+When I click on element located `By.xpath(//form[@class='row my-5']//button[@type='submit'])`
+When I enter `#{generate(Name.firstName)}` in field located `By.xpath(//input[@id='displayName'])`
+When I enter `#{generate(regexify '[qwerty123456]{8}')}` in field located `By.xpath(//input[@id='password'])`
+
+Composite: When I log in as registered user
+When I enter `shagons@mail.ru` in field located `By.xpath(//*[@id="user"])`
+When I wait until element located `By.xpath(//*[@id="password"])` disappears
+When I click on element located `By.xpath(//*[@id="login"])`
+When I enter `Ba12na34nas56` in field located `By.xpath(//*[@id="password"])`
